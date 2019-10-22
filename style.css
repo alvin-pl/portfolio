@@ -1,0 +1,71 @@
+body{
+    padding: 25px;
+}
+
+header{
+    margin-top: 25px;
+    background-color:rgb(214, 214, 214);
+    text-align: center;
+}
+
+.portfolio{
+    margin-top: 0px;
+}
+
+ .home, .bio, .projects{
+    font-size: 20px;
+    font-weight: bold;
+    height: 150px;
+    margin-top: 10px;
+    background-color:rgb(214, 214, 214);
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: space-between;
+}
+
+.line{
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 2px solid rgb(0, 0, 0);
+    margin: 1em 0;
+    padding: 0;
+    margin-top: 25%;
+    margin-bottom: 25%;
+}
+
+footer{
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color:rgb(214, 214, 214);
+}
+
+h1{
+    background-color:rgb(158, 158, 158);
+}
+
+p{
+    background-color:rgb(158, 158, 158);
+}
+
+
+ul{
+    background-color:rgb(158, 158, 158);
+}
+
+
+@media only screen and (min-width: 600px) {
+  div{
+    display: inline-block;
+    width: 32%;
+    height: 150px;
+  }
+  body{
+      margin-top: 10%;
+  }
+}
