@@ -1,20 +1,19 @@
 
-let info = {
-    home: 'Lorem Ipsum is simply dummy text of the printing',
-    bio: 'this is going to be my bio',
-};
-
 function pressHome(){
-    $('.homeB').click(function(e){
-        let grabInfo = info.home;
-        $('.homeP').html(grabInfo);
+    $('#buttonH').click(function(e){
+        $('.homeP').toggle('slow');
     })
 }
 
 function pressBio(){
-    $('.bioB').click(function(e) {
-        let grabInfo = info.bio;
-        $('.bioP').html(grabInfo);
+    $('#buttonB').click(function(e) {
+        $('.bioP').toggle('slow');
+    })
+}
+
+function pressProjects() {
+    $('#buttonP').click(function (e) {
+        $('.projectsP').toggle('slow');
     })
 }
 
@@ -22,5 +21,6 @@ function pressBio(){
 function portLoaded(){
     pressHome();
     pressBio();
+    pressProjects();
 }
 $(portLoaded);
