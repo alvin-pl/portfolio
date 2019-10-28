@@ -2,12 +2,14 @@
 function pressHome(){
     $('#buttonH').click(function(e){
         $('.homeP').toggle('slow');
+        $('#buttonB').toggle();
     })
 }
 
 function pressBio(){
     $('#buttonB').click(function(e) {
         $('.bioP').toggle('slow');
+        $('#buttonP').toggle();
     })
 }
 
