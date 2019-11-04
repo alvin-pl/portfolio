@@ -1,72 +1,74 @@
 
-@font-face { font-family: candara; 
-    src: url('/Users/alvinpl/Desktop/portfolio/candara/Cabin-SemiBold.ttf');
-} 
+/* MOBILE */
 *{
-    font-family: candara;
+    font-family: libre baskerville,Georgia,serif;
+    color: #494C4E;
 }
 
 body{
-    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#fefefe+28,e4e4e4+49,eaeaea+50,eeeeee+100 */
-background: rgb(254,254,254); /* Old browsers */
-background: -moz-linear-gradient(top,  rgba(254,254,254,1) 28%, rgba(228,228,228,1) 49%, rgba(234,234,234,1) 50%, rgba(238,238,238,1) 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top,  rgba(254,254,254,1) 28%,rgba(228,228,228,1) 49%,rgba(234,234,234,1) 50%,rgba(238,238,238,1) 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom,  rgba(254,254,254,1) 28%,rgba(228,228,228,1) 49%,rgba(234,234,234,1) 50%,rgba(238,238,238,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefefe', endColorstr='#eeeeee',GradientType=0 ); /* IE6-9 */
-
+  border: 5px solid #494C4E;
+  padding: 3.5px;
 }
 
 
 header{
-    margin-top: 25px;
+    display: flex;
+    border: 5px solid #494C4E;
+    width: 60px;
+    height: 55px;
     text-align: center;
+    font-size: 20px; 
+    margin-top: 5%;
+    margin-bottom: 50%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+img{
+    margin-bottom: 15%;
+    height: 50px;
+    width: 50px;
+}
+
+#linkContain{
+    display: inline-block;
 }
 
 div{
-position: static;
+    width: 100%;
 }
 
-.portfolio{
-    margin-top: 0px;
-}
-
- .home, .bio, .projects{
-    position: static;
-    font-size: 20px;
-    font-weight: bold;
-    height: 150px;
-    margin-top: 10px;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-content: space-between;
+.about, .projects{
+    font-size: 16px;
+    display: flex;   
+    /* margin-top: 5%; */
+    width: 100%;
 }
 
 .line{
     display: block;
     height: 1px;
     border: 0;
-    border-top: 2px solid rgb(0, 0, 0);
+    border-top: 1px solid #494C4E;
     margin: 1em 0;
     padding: 0;
-    margin-top: 30%;
-    margin-bottom: 30%;
+    margin-top: 20%;
+    margin-bottom: 20%;
 }
 
-footer{
+.contact-info{
     font-size: 20px;
     position: relative;
     width: 100%;
     text-align: center;
-}
-
-h1{
-    background-color:rgb(158, 158, 158);
+    margin-bottom: 25px;
 }
 
 p{
-    display: none;
-    line-height: 1.5;
-    text-align: center;
+    line-height: 1.9;
+    text-align: left;
+    margin-bottom: 15%;
 }
 
 
@@ -74,52 +76,82 @@ ul{
     background-color:rgb(158, 158, 158);
 }
 
-button{
-    display: flex;
-    margin-right: auto;
-    margin-left: auto;
-    border: none;
-    background-color: inherit;
-    padding: 14px 28px;
-    font-size: 35px;
-    cursor: pointer;
-}
-
-
-img{
-    display: flex;   
-    margin-right: auto;
-    margin-left: auto;
-    margin-bottom: 15px;
-    height: 50px;
-    width: 50px;
-}
-
-.bioP, .homeP{
-    color: rgb(43, 43, 43);
-}
-
-#buttonH, #buttonB, #buttonP{
-    color: rgb(107, 106, 106);
-}
-
 #nbaPic{
+    display: flex; 
     width: 170px;
     height: 100px;
 }
 
+#mac{
+      display: flex; 
+      width: 265px;
+      height: 90px;
+      margin-right: auto;
+      margin-left: auto;
+}
+
+h2, h3, h4{
+    text-align: left;
+    margin-top: 1px;
+}
+
+h1{
+    font-size: 30px;
+    line-height: 1.5em;
+    margin-bottom: 20%;
+    text-align: center;
+}
+
+h2{
+    font-size: 17px;
+}
+
+h3{
+font-size: 15px;
+color: #F6AC00;
+}
+
+span{
+    color: #F6AC00;
+}
+
+
+.pic{
+    display: inline-block;
+    /* display: flex; */
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin-left: 30px;
+}
+
+
+
+/* DESKTOP */
 @media only screen and (min-width: 600px) {
   div{
-    display: inline-block;
-    width: 32%;
-    height: 150px;
+      display: inline-block;
+      width: 32%;
+      height: 150px;
   }
   
   body{
-      margin-top: 10%;
+      /* margin-top: 10%; */
   }
 
-#linkContain{
+  header{
+      margin-bottom: 10%;
+  }
+
+  h1{
+      margin-bottom: 10%;
+      margin-left: 25%;
+      margin-right: 25%;
+  }
+
+  #linkContain{
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -130,10 +162,35 @@ img{
 
 }
 
- img{
-     display: inline-block; 
+ #mac{
      display: flex;  
- 
+     margin-left: auto;
+     margin-right: auto;
+     width: 1200px;
+     height: 435px;
+     margin-bottom: 5%;
+}
+
+h2, h3{
+    margin-left: 23%;
+    margin-top: 150px;
+}
+
+div{
+    /* border: 1px solid black; */
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 60px;
+}
+
+p{
+    margin-left: 400px;
+    margin-right: 400px;
+}
+
+.line{
+    margin-top: 1%;
+    margin-bottom: 1%;
 }
 
 }
