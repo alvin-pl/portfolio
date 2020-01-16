@@ -1,59 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="style.css" rel="stylesheet" type="text/css" />
-    <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
     <title>Alvin's Portfolio</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link rel="stylesheet" href="normalize.css " type="text/css">
 </head>
 
 <body>
-    <header id="home">Home</header>
 
-    <h1>Hello, my name is Alvin. I am a Full Stack Developer living in
-        Boston, MA.</h1>
-
-<img id="mac" src="image/macbook.jpg">
-    
-    <h2>About:</h2>
-    <div class="about">
-        <p>I am a web developer and a current Thinkful student. 
-            The real <span>passion</span> for programming comes from the idea that you
-            can make an idea come to life. I can build any type of application or 
-            platform I want. To me, this is a form of <span>freedom</span>.
-
-                Traveling is on my radar. I want to meet different
-                people and become aware of different cultures. From a <span>teamwork</span> perspective,
-                there are multiple minds working to figure out an issue. I also
-                enjoy the <span>ability</span> to bounce ideas off of other people. &nbsp;</p>
+    <div class='container'>
+        <div class='sidebar'>
+            <nav>
+                <ul>
+                    <li><a href='pages/about.html'>About</a></li>
+                    <li><a href='pages/portfolio.html'>Portfolio</a></li>
+                    <li><a href='pages/blog.html'>Blog</a></li>
+                    <li><a href='pages/contact.html'>Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class='content'>
+            <section class='hero'>
+                <img src="/Users/alvinpl/Desktop/Thinkful-personal-projects/portfolio/image/pic.JPG" />
+                <div class='hero-content'>
+                    <h1>Passionate<br>Web Developer</h1>
+                    <P>I'm a great Web Developer</P>
+                    <a class='action-btn' href='#'>Hire me</a>
+                </div>
+            </section>
+        </div>
+        <div class='footer'>
+        <footer>
+            <ul>
+                <li><a href='#'><img src="/Users/alvinpl/Desktop/Thinkful-personal-projects/portfolio/image/email.png" class="logo"></a></li>
+                <li><a href='#'><img src="/Users/alvinpl/Desktop/Thinkful-personal-projects/portfolio/image/email.png" class="logo"></a></li>
+                <li><a href='#'><img src="/Users/alvinpl/Desktop/Thinkful-personal-projects/portfolio/image/email.png" class="logo"></a></li>
+                <!-- <li><a href='#'><img src="/Users/alvinpl/Desktop/Thinkful-personal-projects/portfolio/image/github.png" class="logo"></a></li>
+                <li><a href='#'><img src="/Users/alvinpl/Desktop/Thinkful-personal-projects/portfolio/image/linkedin.png" class="logo"></a></li> -->
+            </ul>
+        </footer>
     </div>
 
-    <h2>Projects:</h2>
-    <div class="projects">
-        <p class="projectsP"> <a href="https://alvin-pl.github.io/NBA-quiz/" target="_blank"><img id="nbaPic" src="image/nba-pic.png" alt="My NBA Quiz link"></a></p>
-    </div>
-
-    <hr class="line">
-
-    <h3>Services:</h3>
-    <p>Web Development is building out the visual components of a website.
-    Using HTML, CSS , Javascript, and JQuery. I build fast, interactive websites.</p>
-
-
-    <hr class="line">
-
-    <div class="contact-info">Contact Info</div>
-
-    <footer id="linkContain">
-        <a href="mailto: alvinpl21@gmail.com" target="_blank"><img src="image/gmail.png" class="pic" alt="Gmail link"></a>
-        <a href="https://github.com/alvin-pl" target="_blank"><img src="image/github.png" class="pic" alt="Github link"></a>
-        <a href="https://www.linkedin.com/in/alvin-pierre-louis-6b681185/" target="_blank"><img src="image/linkedin.png" class="pic" alt="Linkedin link"></a>
-    </footer>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="index.js"></script>
 </body>
+
 </html>
