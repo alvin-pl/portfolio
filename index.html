@@ -1,49 +1,215 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>Alvin's Portfolio</title>
-    <link rel="stylesheet" href="style.css" type="text/css" />
-    <link rel="stylesheet" href="normalize.css " type="text/css">
+    <title>Alvin Pierre-Louis Portfolio</title>
+    <meta name="description" content="Alvin Pierre-Louis's Portfolio">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <meta name="msapplication-TileColor" content="#00aba9">
+    <meta name="theme-color" content="#ffffff">
 </head>
 
 <body>
-
-    <div class='container'>
-        <div class='sidebar'>
-            <nav>
-                <ul>
-                    <li><a href='pages/about.html'>About</a></li>
-                    <li><a href='pages/portfolio.html'>Portfolio</a></li>
-                    <li><a href='pages/blog.html'>Blog</a></li>
-                    <li><a href='pages/contact.html'>Contact</a></li>
-                </ul>
-            </nav>
+    <nav role="navigation" class ="topnav" id="myTopnav">
+        <div class="homeContainer">
         </div>
-        <div class='content'>
-            <section class='hero'>
-                <img src="/Users/alvinpl/Desktop/Thinkful-personal-projects/portfolio/image/pic.JPG" />
-                <div class='hero-content'>
-                    <h1>Passionate<br>Web Developer</h1>
-                    <P>I'm a great Web Developer</P>
-                    <a class='action-btn' href='#'>Hire me</a>
+        <div class="linkContainer">
+            <a href="#bioSection">About Me</a>
+            <a href="#skillsSection">Skills</a>
+            <a href="#projectsSection">Projects</a>
+            <a href="#contactSection">Contact</a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="toggleHamburger()">
+          <img src="images/hamburger.png" alt="hamburger icon" class="hamburger">
+        </a>
+    </nav>
+    <main role="main">
+        <header role="banner" class="hero">
+            <div class="heroText">
+                <h1 class="title">Alvin Pierre-Louis</h1>
+                <h5 class="subtitle">Full Stack Web Developer</h5>
+            </div>
+        </header>
+
+        <section class="section bioSection">
+            <h3 class="sectionHeader">ABOUT ME</h3>
+            <hr>
+            <div class="bioContainer">
+                <div class="bio">
+                    <p class="bioParagraph">
+                        I am a Full Stack Engineer who's passion for technology comes from the idea that you
+                        can make an idea come to life. I can build any type of application or
+                        platform I want. To me, this is a form of freedom. Coding is a journey about 
+                        attention to detail, research, solving problems, and teamwork! I always 
+                        look forward to working on a team with motivated individuals anytime I can.
+                        
+                    </p> 
+                    <p class="bioParagraph">    
+                        On the days when i'm not coding, I'm exploring parts of my city I've been to, 
+                        hiking, catching up with friends, and enjoying everyday like it's my last. 
+                    </p>
                 </div>
-            </section>
-        </div>
-        <div class='footer'>
-        <footer>
-            <ul>
-                <li><a href='#'><img src="/Users/alvinpl/Desktop/Thinkful-personal-projects/portfolio/image/email.png" class="logo"></a></li>
-                <li><a href='#'><img src="/Users/alvinpl/Desktop/Thinkful-personal-projects/portfolio/image/email.png" class="logo"></a></li>
-                <li><a href='#'><img src="/Users/alvinpl/Desktop/Thinkful-personal-projects/portfolio/image/email.png" class="logo"></a></li>
-                <!-- <li><a href='#'><img src="/Users/alvinpl/Desktop/Thinkful-personal-projects/portfolio/image/github.png" class="logo"></a></li>
-                <li><a href='#'><img src="/Users/alvinpl/Desktop/Thinkful-personal-projects/portfolio/image/linkedin.png" class="logo"></a></li> -->
-            </ul>
-        </footer>
-    </div>
+                <img src="images/profpic.JPG" alt="profile picture" class="profpic">
+            </div>
+        </section>
 
+        <section class="section skillsSection">
+            <h3 class="sectionHeader">SKILLS</h3>
+            <hr>
+            <div class="skillsContainer">
+                <div class="skillSet">
+                    <h4 class="skillHeader">Front End</h4>
+                    <div class="row">
+                        <div>
+                            <img src="images/front-end.png" alt="front-end" class="skillSymbol frontEnd">
+                        </div>
+                        <ul class="skillList">
+                            <li>JavaScript ES6</li>
+                            <li>jQuery</li>
+                            <li>React</li>
+                            <li>HTML5</li>
+                            <li>CSS3</li>
+                        </ul>
+                    </div>
+                </div>    
+                <div class="skillSet">
+                    <h4 class="skillHeader">Back End</h4>
+                    <div class="row">
+                        <div>
+                            <img src="images/database.png" alt="back-end" class="skillSymbol backEnd">
+                        </div>
+                        <ul class="skillList">
+                            <li>Node.js</li>
+                            <li>Express</li>
+                            <li>PostgreSQL</li>
+                            <li>Mocha / Chai</li>
+                            <li>RESTful APIs</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="skillSet">
+                    <h4 class="skillHeader">Tools</h4>
+                    <div class="row">
+                        <div>
+                            <img src="images/tools.png" alt="tools" class="skillSymbol tools">
+                        </div>
+                        <ul class="skillList">
+                            <li>Git</li>
+                            <li>GitHub</li>
+                            <li>Heroku</li>
+                            <li>Zeit</li>
+                            <li>Ally</li>
+                    </ul>
+                    </div>
+                </div>
+            </div>
+            <hr>
+        </section>  
+
+        <section class="section projectsSection"> 
+            <h3 class="sectionHeader projectsSectionHeader">PROJECTS</h3>    
+            <div class="project">
+                <div class="projectDetails">
+                    <h4 class="projectHeader">Laptop Customizer</h4>
+                    <div class="screenshotContainer">
+                        <img src="images/laptop-customizer.png" alt="laptop-customizer" class="projectScreenshot">
+                    </div>
+                    <p class="projectDescription">A front end web application of a custom laptop with a 
+                    series of options that reports the total cost of the user’s order. Simple design
+                    implementing ReactJS</p>
+                </div>
+                <div class="projectTechSpecs">
+                    <div class="languageList">
+                        <img src="images/react.png" alt="react logo" class="languageSymbol">
+                        <img src="images/css.png" alt="css logo" class="languageSymbol">
+                    </div>
+                    <div class="projectButtons">
+                        <a href="https://github.com/alvin-pl/laptop_customizer" class="button demoButton" role="button" target="_blank">GitHub</a>
+                        <a href="https://github.com/alvin-pl/laptop_customizer" class="button" role="button" target="_blank">Client</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project">
+                <div class="projectDetails">
+                    <h4 class="projectHeader">Trelloyes</h4>
+                    <div class="screenshotContainer">
+                        <img src="images/trelloyes.png" alt="trelloyes" class="projectScreenshot">
+                    </div>
+                    <p class="projectDescription"> A front end application where users are able to 
+                        delete and generate random cards which will be added to their appropriate 
+                        list. The design was based on Trello</p>
+                </div>
+                <div class="projectTechSpecs">
+                    <div class="languageList">
+                        <img src="images/react.png" alt="react logo" class="languageSymbol">
+                        <img src="images/css.png" alt="css logo" class="languageSymbol">
+                    </div>
+                    <div class="projectButtons">
+                        <a href="https://github.com/alvin-pl/Thinkful-Trello" class="button demoButton" role="button" target="_blank">GitHub</a>
+                        <a href="https://github.com/alvin-pl/Thinkful-Trello" class="button" role="button" target="_blank">Client</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project">
+                    <div class="projectDetails">
+                        <h4 class="projectHeader">NBA Quiz</h4>
+                        <div class="screenshotContainer">
+                            <img src="images/nba-quiz.png" alt="nba-quiz screenshot" class="projectScreenshot">
+                        </div>
+                        <p class="projectDescription">Built a straightforward quiz application 
+                            that generated questions specific to the NBA</p>
+                    </div>
+                    <div class="projectTechSpecs">
+                        <div class="languageList">
+                            <img src="images/html.png" alt="html logo" class="languageSymbol">
+                            <img src="images/css.png" alt="css logo" class="languageSymbol">
+                            <img src="images/javascript.png" alt="javascript logo" class="languageSymbol">
+                            <img src="images/jquery.png" alt="jquery logo" class="languageSymbol">
+                        </div>
+                        <div class="projectButtons">
+                            <a href="https://github.com/alvin-pl/NBA-quiz" class="button" role="button" target="_blank">GitHub</a>
+                            <a href="https://alvin-pl.github.io/NBA-quiz/" class="button" role="button" target="_blank">Client</a>
+                        </div>
+                    </div>
+                </div>  
+        </section>
+        
+        <section class="section contactSection">
+            <h3 class="sectionHeader">CONTACT</h3>
+            <hr>
+            <p class="contactBlurb">Don't feel hesitant to reach out!</p>
+            <div class="contactInfo">
+                <ul class="contactMethods">
+                    <li class="contactMethod">
+                        <a href="mailto:alvinpl21@gmail.com" class="contactLink" target="_blank"> 
+                            <i class="far fa-envelope"></i>
+                            <span class="contactSpan emailSpan">alvinpl21@gmail.com</span>
+                        </a>
+                    </li>
+                    <li class="contactMethod">
+                        <a href="https://github.com/alvin-pl" class="contactLink" target="_blank">
+                            <i class="fab fa-github"></i>
+                            <span class="contactSpan">alvin-pl</span>
+                        </a>
+                    </li>
+                    <li class="contactMethod linkedin">
+                        <a href="https://www.linkedin.com/in/alvinpierrelouis/" class="contactLink" target="_blank"> 
+                            <i class="fab fa-linkedin"></i>
+                            <span class="contactSpan">alvinpierrelouis</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="script.js"></script>
 </body>
 
 </html>
